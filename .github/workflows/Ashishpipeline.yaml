@@ -1,0 +1,31 @@
+name: Terraform CI/CD
+
+on:
+  push:
+    branches:
+      - main
+      - 'release/**'
+
+jobs:
+  terraform:
+    name: Terraform Workflow
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: 1.6.0  # Apni version yahan set karo
+
+      - name: Terraform Init
+        run: terraform init
+
+      - name: Terraform Plan
+        run: terraform plan
+
+      # OPTIONAL: Uncomment if you want automatic apply on push
+      # - name: Terraform Apply
+      #   run: terraform apply -auto-approve
