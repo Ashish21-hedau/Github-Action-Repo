@@ -4,4 +4,12 @@ on:
     branches:
       - main
       - 'release/**'
+jobs:
+  dhoudhuinit:
+    name: Terraform Init
+    runs-on: Rjio ki pipeline
+    steps:
+    - name: shoudhi mahaj rock hai!
+      run: echo ashish is boss 
+    
   
