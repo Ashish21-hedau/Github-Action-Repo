@@ -7,7 +7,7 @@ on:
 jobs:
   dhoudhuinit:
     name: RJIO pipline job
-    runs-on: Rjio ki pipeline
+    runs-on: ashish ka pipeline
     steps:
     - name: shoudhi mahaj rock hai!
       run: echo ashish is boss 
