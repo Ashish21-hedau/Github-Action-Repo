@@ -1,0 +1,7 @@
+name: "Rjio ki pipeline" 
+on:
+  push:
+    branches:
+      - main
+      - 'release/**'
+  
