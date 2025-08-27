@@ -6,7 +6,7 @@ on:
       - 'release/**'
 jobs:
   dhoudhuinit:
-    name: Terraform Init
+    name: RJIO pipline job
     runs-on: Rjio ki pipeline
     steps:
     - name: shoudhi mahaj rock hai!
